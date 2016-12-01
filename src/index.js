@@ -1,6 +1,8 @@
 import "./index.css";
+import {context} from "./context.js";
 
 import numeral from "numeral";
 
 const courseValue = numeral(1000).format("$0,0.00");
 console.log("I would pay " + courseValue + " for this awesome course");
+console.log(context.apiPort);
